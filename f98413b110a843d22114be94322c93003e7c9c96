@@ -1,0 +1,1 @@
+{"jobID":"db28ca02-131d-0e50-27be-a7108fbbeefc","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"default:deployment/hello-kubernetes":{"add":{},"remove":{"tag.hello-kubernetes":"true"}}}},"result":null}
