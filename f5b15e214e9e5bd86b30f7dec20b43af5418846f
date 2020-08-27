@@ -1,0 +1,1 @@
+{"jobID":"b495b190-257e-7eab-566b-8dd805189f0c","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"default:deployment/hello-kubernetes":{"add":{"tag.hello-kubernetes":"glob:1.*"},"remove":{}}}},"result":null}
