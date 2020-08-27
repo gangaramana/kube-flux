@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: hello-kubernetes
   annotations:
-    fluxcd.io/tag.hello-kubernetes: glob:1.*
+    fluxcd.io/tag.hello-kubernetes: glob:2.*
 spec:
   replicas: 2
   selector:
