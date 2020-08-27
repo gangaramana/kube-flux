@@ -1,9 +1,11 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: web
+  annotations:
+    fluxcd.io/tag.nginx: semver:~1.0
+    fluxcd.io/automated: 'true'
 spec:
   selector:
     matchLabels:
@@ -15,7 +17,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: bharamicrosystems/nginx:v1
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: bharamicrosystems/nginx:v1
+          ports:
+            - containerPort: 80
